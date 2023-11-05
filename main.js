@@ -12,7 +12,6 @@ let wins = localStorage.getItem("wins") || 0;
 score.textContent = wins;
 localStorage.setItem("wins", wins);
 getRandomNums(nums);
-console.log(nums);
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
