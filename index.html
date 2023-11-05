@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Быки и коровы</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h3>Быки и коровы</h3>
+      <div class="score">
+        <span>Побед:</span><br />
+        <span></span>
+      </div>
+    </header>
+    <section class="rules">
+      <div class="wrap">
+        <h1>Правила</h1>
+        <p>
+          Компьютер задумывает четыре различные цифры из 0,1,2,...9.<br />
+          Игрок делает ходы, чтобы узнать эти цифры и их порядок. Каждый ход
+          состоит из четырёх цифр, 0 может стоять на первом месте.<br />
+          В ответ компьютер показывает число отгаданных цифр, стоящих на своих
+          местах (число быков) и число отгаданных цифр, стоящих не на своих
+          местах (число коров).
+        </p>
+        <h1>Пример</h1>
+        <p>
+          Компьютер задумал 0834. Игрок сделал ход 8134. Компьютер ответил: 2
+          быка (цифры 3 и 4) и 1 корова (цифра 8).
+        </p>
+      </div>
+    </section>
+    <section class="game">
+      <div class="wrap">
+        <form action="">
+          <input type="text" />
+          <button>Угадать число</button>
+          <div class="err_valid"></div>
+        </form>
+        <table>
+          <tr>
+            <th>Ваше число</th>
+            <th>Быки</th>
+            <th>Коровы</th>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+          </tr>
+        </table>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
